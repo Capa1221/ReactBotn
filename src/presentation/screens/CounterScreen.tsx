@@ -15,36 +15,9 @@ const CounterScreen = () => {
             <Text style={styles.title}>{count}</Text>
             <Pressable
                 onPress={() => setCount(count + 1)}
-                style={({ pressed }) => [
-                    {
-                        backgroundColor: pressed ? '#ddd' : '#007BFF',
-                    },
-                    styles.button,
-                ]}
             >
-                <Text style={styles.buttonText}>Incrementar</Text>
-            </Pressable>
-            <Pressable
-                onPress={handleDecrement} 
-                style={({ pressed }) => [
-                    {
-                        backgroundColor: pressed ? '#ddd' : '#FF5733',
-                    },
-                    styles.button,
-                ]}
-            >
-                <Text style={styles.buttonText}>Restar</Text>
-            </Pressable>
-            <Pressable
-                onPress={() => setCount(0)} 
-                style={({ pressed }) => [
-                    {
-                        backgroundColor: pressed ? '#ddd' : '#FFAA00', 
-                    },
-                    styles.button,
-                ]}
-            >
-                <Text style={styles.buttonText}>Reiniciar</Text>
+          
+                <Text>+1</Text>
             </Pressable>
         </View>
     );
