@@ -13,6 +13,19 @@ const CounterScreen = () => {
         onPress={()=>setCount(count+1)}
         onLongPress={()=>setCount(0)}
         />
+      
+        <PrimaryButton
+        label='Restar'
+        
+        onPress={()=>setCount(count-1)}
+        onLongPress={()=>setCount(0)}
+        />
+      
+        <PrimaryButton
+        label='Resetear'
+        onPress={()=>setCount(0)}
+        onLongPress={()=>setCount(0)}
+        />
     </View>
   )
 }

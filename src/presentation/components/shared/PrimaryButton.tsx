@@ -21,8 +21,11 @@ const PrimaryButton = ({label,onPress,onLongPress}:Props) => {
         >
           <Text style={{
             color: Platform.OS === 'android' ? 'while' : '#4746AB',
-          }}>Label</Text>
+          }}>{label}</Text>
         </Pressable>
+        
+        
+
 
   )
 }
