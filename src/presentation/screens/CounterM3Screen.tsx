@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Text, View } from 'react-native';
 import { FAB } from 'react-native-paper';
 import { globalStyle } from '../theme/global.styles';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const CounterM3Screen = () => {
   const [count, setCount] = useState(10);
@@ -9,16 +10,16 @@ const CounterM3Screen = () => {
   return (
     <View style={globalStyle.centercontainer}>
       <Text style={globalStyle.title}>{count}</Text>
-      
+
       <FAB
-        label='+1'
+      icon= "add-circle-outline"
         style={globalStyle.fab}
         onPress={() => setCount(count + 1)}
         onLongPress={() => setCount(0)}
       />
       
       <FAB
-        label='-1'
+       icon = "backspace-outline" 
         style={globalStyle.fab2}
         onPress={() => {
           if (count > 0) {
@@ -29,7 +30,7 @@ const CounterM3Screen = () => {
       />
       
       <FAB
-        label='Reset'
+        icon ="refresh-outline" 
         style={globalStyle.fab3}
         onPress={() => setCount(0)}
         onLongPress={() => setCount(0)}
